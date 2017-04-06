@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>LegacyWise Simple Wireframe Design</title>
+<body style="background-color: #99ffeb" ng-controller="tempCtrl">
+	<div id="fullForm">
+		<div class="container">
+			<div class="jumbotron", style="background-color: #00cc7a;">
+				<h1>LegacyWise Simple Wireframe</h1>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="form-group dropdown col-xs-3">
+				<label for="typeFormSel0"> What type of form do you want to complete? </label>
+				<select class="form-control" id="typeFormSel0" ng-model="formName" onChange = "showNextDisplay(1)">
+					<option></option>
+					<option ng-repeat="category in categories">{{category}}</option>
+					<!-- <option>Insurance</option> -->
+				</select>
+			</div>
+		</div>
+
+		<div class="container" id="nextDisplay1" style="display: none">
+			<div class="form-group dropdown col-xs-3">
+				<label for="typeFormSel1"> What type of {{formName}} form do you want to complete? </label>
+				<select class="form-control" id="typeFormSel1" onChange = "showNextDisplay(2)">
+					<option></option>
+					<option>Change of beneficiary</option>
+				</select>
+			</div>
+		</div>
+
+
+		<div class="container" id="nextDisplay2" style="display: none">
+			<div class="form-group dropdown col-xs-3">
+				<label for="typeFormSel2"> Which company? </label>
+				<select class="form-control" id="typeFormSel2">
+					<option></option>
+					<option>Lincoln</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+	<script src="controllers.js"></script>
+	<script>
+		var selectCount = document.getElementById("fullForm").getElementsByTagName("select").length - 1;
+
+		function showNextDisplay(i){
+			//Gets the next display block
+			var typeForm = "typeFormSel" + (i-1)
+			var nextDisplay = "nextDisplay" + i
+
+			var x = document.getElementById(typeForm).value;
+			
+			//If if it empty, then the next display block(s) go back to being invisible
+			if(x == ""){
+				//Removes everything past the current drop down and sets the selection to blank 
+				for(var x = i; x <= selectCount; x++){
+					document.getElementById("nextDisplay" + x).style.display = "none";
+					document.getElementById("typeFormSel" + x).selectedIndex = 0;
+				}
+			}else{ //Otherwise, the next display block is shown
+				document.getElementById(nextDisplay).style.display = "block";
+			}
+		}
+
+	</script>
+</body>
+</html>

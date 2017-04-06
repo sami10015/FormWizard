@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<link rel="shortcut icon" href="">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+	
+	<title>LegacyWise FormWizard</title>
+
+	<body>
+	<div id="fullForm" ng-controller="mainFormCtrl" style="float: left" ng-init="initialRequest()">
+		<div class="page-header">
+  			<img src="legacywise.png" class="img-responsive" alt="LegacyWise" width="558" height="156">		
+		</div>
+		<div class="container" id="container0">
+			<div class="form-group dropdown col-xs-3">
+				<label for="typeFormSel0"> What type of form do you want to complete? </label>
+				<select class="form-control" id="typeFormSel0" ng-model="formName0" ng-change="createOrDeleteDiv('container0', 'typeFormSel0', formName0)">
+					<option value='' disabled selected>SELECT</option>
+					<option ng-repeat="mainFormType in mainFormTypes">{{mainFormType}}</option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-resource.js"></script>
+	<script src="./controllers/controllers.js"></script>
+</html>
