@@ -7,7 +7,8 @@ var Page = new Schema({
     artifacts: [Artifact],
     template: String,
     pageNumber: Number,
-    groups: [Group]
+    groups: [Group],
+    image: {data: Buffer, contentType: String}
 });
 
 mongoose.model('Page', Page);

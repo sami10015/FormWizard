@@ -34,19 +34,200 @@ var forms = [];
 
 // Fences that will be later used for PDF Rendering
 var fence1 = {
-    startX: 0,
-    startY: 0,
-    endX: 10,
-    endY: 10
+    startX: 145,
+    startY: 67,
+    endX: 145+7,
+    endY: 67+6
 };
 
 var fence2 = {
-    startX: 50,
-    startY: 50,
-    endX: 60,
-    endY: 60
+    startX: 225,
+    startY: 67,
+    endX: 225+7,
+    endY: 67+6
 };
 
+var fence3 = {
+    startX: 322,
+    startY: 67,
+    endX: 322+7,
+    endY: 67+6
+};
+
+var fence4 = {
+    startX: 403,
+    startY: 66,
+    endX: 403+7,
+    endY: 66+6
+};
+
+var fence5 = {
+    startX: 143,
+    startY: 76,
+    endX: 143+7,
+    endY: 76+6
+};
+
+var fence6 = {
+    startX: 199,
+    startY: 76,
+    endX: 199+7,
+    endY: 76+6
+};
+
+var fence7 = {
+    startX: 238,
+    startY: 75,
+    endX: 238+7,
+    endY: 75+6
+};
+
+var fence8 = {
+    startX: 276,
+    startY: 75,
+    endX: 276+7,
+    endY: 75+6
+};
+
+var fence9 = {
+    startX: 349,
+    startY: 75,
+    endX: 349+7,
+    endY: 75+6
+};
+
+var fence10 = {
+    startX: 405,
+    startY: 76,
+    endX: 405+7,
+    endY: 76+6
+};
+
+var fence11 = {
+    startX: 101,
+    startY: 126,
+    endX: 101+198,
+    endY: 126+19
+};
+
+var fence12 = {
+    startX: 388,
+    startY: 126,
+    endX: 388+163,
+    endY: 126+18
+};
+
+var fence13 = {
+    startX: 49,
+    startY: 214,
+    endX: 49+115,
+    endY: 214+13
+};
+
+var fence14 = {
+    startX: 180,
+    startY: 214,
+    endX: 180+24,
+    endY: 214+12
+};
+
+var fence15 = {
+    startX: 211,
+    startY: 219,
+    endX: 211+6,
+    endY: 219+5
+};
+
+var fence16 = {
+    startX: 233,
+    startY: 218,
+    endX: 233+6,
+    endY: 218+6
+};
+
+var fence17 = {
+    startX: 254,
+    startY: 214,
+    endX: 254+45,
+    endY: 214+11
+};
+
+var fence18 = {
+    startX: 309,
+    startY: 214,
+    endX: 309+45,
+    endY: 214+11
+};
+
+var fence19 = {
+    startX: 367,
+    startY: 214,
+    endX: 376+131,
+    endY: 214+12
+};
+
+var fence20 = {
+    startX: 517,
+    startY: 216,
+    endX: 517+48,
+    endY: 214+11
+};
+
+var fence21 = {
+    startX: 49,
+    startY: 292,
+    endX: 49+115,
+    endY: 292+13
+};
+
+var fence22 = {
+    startX: 178,
+    startY: 292,
+    endX: 179+26,
+    endY: 292+13
+};
+
+var fence23 = {
+    startX: 210,
+    startY: 295,
+    endX: 210+7,
+    endY: 295+7
+};
+
+var fence24 = {
+    startX: 232,
+    startY: 295,
+    endX: 232+7,
+    endY: 295+7
+};
+
+var fence25 = {
+    startX: 254,
+    startY: 291,
+    endX: 254+43,
+    endY: 291+13
+};
+
+var fence26 = {
+    startX: 309,
+    startY: 291,
+    endX: 309+43,
+    endY: 291+13
+};
+
+var fence27 = {
+    startX: 365,
+    startY: 291,
+    endX: 365+136,
+    endY: 291+13
+};
+
+var fence28 = {
+    startX: 515,
+    startY: 294,
+    endX: 515+49,
+    endY: 294+13
+};
 // REAL FORM Page 1 fields, sections, and artifacts
 
 // Section 1 - Insurance Company Name
@@ -70,7 +251,7 @@ var realGroup1 = {
 realGroups.push(realGroup1);
 
 var realField1 = {
-    fence: fence2,
+    fence: fence1,
     name: "Central United Life",
     type: "Check box",
     combo: "",
@@ -112,7 +293,7 @@ var realArtifactField2 = {
 realArtifacts.push(realArtifactField2);
 
 var realField3 = {
-    fence: fence2,
+    fence: fence3,
     name: "American General",
     type: "Check box",
     combo: "",
@@ -133,7 +314,7 @@ var realArtifactField3 = {
 realArtifacts.push(realArtifactField3);
 
 var realField4 = {
-    fence: fence2,
+    fence: fence4,
     name: "Loyal American",
     type: "Check box",
     combo: "",
@@ -154,7 +335,7 @@ var realArtifactField4 = {
 realArtifacts.push(realArtifactField4);
 
 var realField5 = {
-    fence: fence2,
+    fence: fence5,
     name: "Gold Cross",
     type: "Check box",
     combo: "",
@@ -175,7 +356,7 @@ var realArtifactField5 = {
 realArtifacts.push(realArtifactField5);
 
 var realField6 = {
-    fence: fence2,
+    fence: fence6,
     name: "UniLife",
     type: "Check box",
     combo: "",
@@ -196,7 +377,7 @@ var realArtifactField6 = {
 realArtifacts.push(realArtifactField6);
 
 var realField7 = {
-    fence: fence2,
+    fence: fence7,
     name: "Unum",
     type: "Check box",
     combo: "",
@@ -217,7 +398,7 @@ var realArtifactField7 = {
 realArtifacts.push(realArtifactField7);
 
 var realField8 = {
-    fence: fence2,
+    fence: fence8,
     name: "American States",
     type: "Check box",
     combo: "",
@@ -238,7 +419,7 @@ var realArtifactField8 = {
 realArtifacts.push(realArtifactField8);
 
 var realField9 = {
-    fence: fence2,
+    fence: fence9,
     name: "Family Life",
     type: "Check box",
     combo: "",
@@ -259,7 +440,7 @@ var realArtifactField9 = {
 realArtifacts.push(realArtifactField9);
 
 var realField10 = {
-    fence: fence2,
+    fence: fence10,
     name: "Manhattan Life",
     type: "Check box",
     combo: "",
@@ -295,7 +476,7 @@ realArtifacts.push(realArtifactSection2);
 
 
 var realField11 = {
-    fence: fence2,
+    fence: fence11,
     name: "Policy Number",
     type: "Number",
     combo: "",
@@ -315,9 +496,9 @@ var realArtifactField11 = {
 realArtifacts.push(realArtifactField11);
 
 var realField12 = {
-    fence: fence2,
+    fence: fence12,
     name: "Insuring the Life of:",
-    type: "Number",
+    type: "Text",
     combo: "",
     radio: false,
     prompt: "Insuring life of:",
@@ -349,7 +530,7 @@ var realArtifactSection3 = {
 realArtifacts.push(realArtifactSection3);
 
 var realField13 = {
-    fence: fence2,
+    fence: fence13,
     name: "Name (first, middle initial, last)",
     type: "Text",
     combo: "",
@@ -369,7 +550,7 @@ var realArtifactField13 = {
 realArtifacts.push(realArtifactField13);
 
 var realField14 = {
-    fence: fence2,
+    fence: fence14,
     name: "Percent",
     type: "Number",
     combo: "",
@@ -395,7 +576,7 @@ var realGroup2 = {
 realGroups.push(realGroup2);
 
 var realField15 = {
-    fence: fence2,
+    fence: fence15,
     name: "Irrevocable - Yes",
     type: "Check box",
     combo: "",
@@ -416,7 +597,7 @@ var realArtifactField15 = {
 realArtifacts.push(realArtifactField15);
 
 var realField16 = {
-    fence: fence2,
+    fence: fence16,
     name: "Irrevocable - No",
     type: "Check box",
     combo: "",
@@ -437,7 +618,7 @@ var realArtifactField16 = {
 realArtifacts.push(realArtifactField16);
 
 var realField17 = {
-    fence: fence2,
+    fence: fence17,
     name: "Date of Birth",
     type: "Date",
     combo: "",
@@ -457,7 +638,7 @@ var realArtifactField17 = {
 realArtifacts.push(realArtifactField17);
 
 var realField18 = {
-    fence: fence2,
+    fence: fence18,
     name: "Relationship to Insured",
     type: "Text",
     combo: "",
@@ -477,7 +658,7 @@ var realArtifactField18 = {
 realArtifacts.push(realArtifactField18);
 
 var realField19 = {
-    fence: fence2,
+    fence: fence19,
     name: "Present Address",
     type: "Text",
     combo: "",
@@ -497,7 +678,7 @@ var realArtifactField19 = {
 realArtifacts.push(realArtifactField19);
 
 var realField20 = {
-    fence: fence2,
+    fence: fence20,
     name: "Social Security Number",
     type: "Number",
     combo: "",
@@ -532,7 +713,7 @@ var realArtifactSection4 = {
 realArtifacts.push(realArtifactSection4);
 
 var realField21 = {
-    fence: fence2,
+    fence: fence21,
     name: "Name (first, middle initial, last)",
     type: "Text",
     combo: "",
@@ -552,7 +733,7 @@ var realArtifactField21 = {
 realArtifacts.push(realArtifactField21);
 
 var realField22 = {
-    fence: fence2,
+    fence: fence22,
     name: "Percent",
     type: "Number",
     combo: "",
@@ -578,7 +759,7 @@ var realGroup3 = {
 realGroups.push(realGroup3);
 
 var realField23 = {
-    fence: fence2,
+    fence: fence23,
     name: "Irrevocable - Yes",
     type: "Check box",
     combo: "",
@@ -599,7 +780,7 @@ var realArtifactField23 = {
 realArtifacts.push(realArtifactField23);
 
 var realField24 = {
-    fence: fence2,
+    fence: fence24,
     name: "Irrevocable - No",
     type: "Check box",
     combo: "",
@@ -620,7 +801,7 @@ var realArtifactField24 = {
 realArtifacts.push(realArtifactField24);
 
 var realField25 = {
-    fence: fence2,
+    fence: fence25,
     name: "Date of Birth",
     type: "Date",
     combo: "",
@@ -640,7 +821,7 @@ var realArtifactField25 = {
 realArtifacts.push(realArtifactField25);
 
 var realField26 = {
-    fence: fence2,
+    fence: fence26,
     name: "Relationship to Insured",
     type: "Text",
     combo: "",
@@ -660,7 +841,7 @@ var realArtifactField26 = {
 realArtifacts.push(realArtifactField26);
 
 var realField27 = {
-    fence: fence2,
+    fence: fence27,
     name: "Present Address",
     type: "Text",
     combo: "",
@@ -680,7 +861,7 @@ var realArtifactField27 = {
 realArtifacts.push(realArtifactField27);
 
 var realField28 = {
-    fence: fence2,
+    fence: fence28,
     name: "Social Security Number",
     type: "Number",
     combo: "",
@@ -699,16 +880,17 @@ var realArtifactField28 = {
 }
 realArtifacts.push(realArtifactField28);
 
+// Img path to our default png file
+var imgPath = './public/forms/Central United Life beneficiary change-1.png';
+
 // Page(s) for the Form Object
 var realPage = {
     artifacts: realArtifacts,
     template: "Page 1",
-    pageNumber: 1
+    pageNumber: 1,
+    image: {data: fs.readFileSync(imgPath), contentType: 'image/png'}
 };
 realPages.push(realPage);
-
-// Img path to our default png file
-var imgPath = './public/forms/Central United Life beneficiary change-1.png';
 
 // REAL Form object that is connected to Category object
 var realFormData = {
@@ -716,8 +898,7 @@ var realFormData = {
     pages: realPages,
     name: "Central United Life Beneficiary Change",
     company: "Central United",
-    suffix: 'png',
-    image: {data: fs.readFileSync(imgPath), contentType: 'image/png'}
+    suffix: 'png'
 };
 
 var realForm = new Form(realFormData);

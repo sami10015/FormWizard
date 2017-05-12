@@ -8,8 +8,7 @@ var Form = new Schema({
     pages: [Page],
     name: String,
     company: String,
-    suffix: String,
-    image: {data: Buffer, contentType: String}
+    suffix: String
 });
 
 mongoose.model('Form', Form);
